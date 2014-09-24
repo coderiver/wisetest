@@ -1,17 +1,210 @@
-// Normally mainpage styles
+// all
+=r($width)
+	@media only screen and (max-width: $width+'px')
+		@content
+
+=rm($width)
+	@media only screen and (min-width: $width+'px')
+		@content
+
+body, html
+	width: 100%
+	height: 100%
+	overflow: hidden
+	+r(768)
+		height: 100%
+		overflow: visible
+html
+	font-size: 62.5%
++font("PTSans Bold", pts75f-webfont)
++font("OpenSans Light", opensans-light-webfont)
+
+=psb
+	font-family: "PTSans Bold", Tahoma, sans-serif
+=osl
+	font-family: "OpenSans Light", Tahoma, sans-serif 
+
+
+=ttu
+	text-transform: uppercase
 
 
 
 
-
-
-
-
-
-
-
-
-
+//
+.out
+	width: 100%
+	min-height: 100%
+	background: url(../img/bg-img.jpg) no-repeat center center
+	background-size: cover
+	+box
+	min-width: 320px
+	+rm(1300)
+		height: 100%
+	+r(640)
+		height: auto
+.wrapper
+	width: 100%
+	height: 100vh
+	background: url(../img/filter.png) center center no-repeat
+	background-size: cover
+	text-align: center
+	+vertical
+	+r(640)
+		height: auto
+		width: 81%
+		padding: 0px 9.5% 20px 9.5%
+.logo
+	width: 131px
+	+rm(1300)
+		width: 17vw
+	+r(640)
+		width: 51%
+		max-width: 262px
+.inner
+	width: 100%
+	+box
+	display: inline-block
+	vertical-align: middle
+	+r(640)
+		width: 100%
+		max-width: 100%
+		padding-top: 20%
+	h1
+		+psb
+		+ttu
+		+fs(24)
+		color: white
+		letter-spacing: 1.5px
+		margin-top: 7.5%
+		+rm(1300)
+			font-size: 3.1vw 
+			line-height: 5.23vw
+			letter-spacing: 0.37vw
+			margin-top: 8vh
+			span
+				display: block
+				margin: 0 auto
+				width: 100%
+		+r(768)
+			display: block
+			margin: 9% auto 0px
+			max-width: 500px
+			text-align: center
+			line-height: 40px
+			span
+				display: block
+				width: 100%
+		+r(640)
+			font-size: 6vw 
+			line-height: 9.4vw
+			max-width: 95%
+			letter-spacing: 0.7vw
+			margin-top: 15%
+	p
+		+osl
+		color: white
+		+fs(14)
+		display: block
+		width: 60%
+		margin: 3.2% auto 8.4%
+		letter-spacing: 0
+		+rm(1300)
+			font-size: 1.8vw
+			line-height: 3.1vw
+			margin: 3vh auto 9vh
+			width: 85%
+		+r(768)
+			width: 96%
+			line-height: 24px
+			max-width: 640px
+			margin: 3.5% auto 12%
+		+r(640)
+			font-size: 4vw 
+			line-height: 6.55vw
+			margin: 9% auto 13%
+	form
+		width: 100%
+		text-align: justify
+		+fs(0.1)
+		max-width: 640px
+		margin: 0 auto
+		padding: 0 2px
+		+box
+		height: 40px
+		+rm(1300)
+			max-width: 84%
+		&:after
+			content: ""
+			width: 100%
+			display: inline-block
+		+r(640)
+			width: 100%
+			padding: 0px
+			height: auto
+	div
+		display: inline-block
+		+r(640)
+			width: 100%
+	input
+		background: none
+		color: white
+		border: 3px solid white
+		border-radius: 3px
+		padding: 8px 10px 7px 10px
+		+fs(13) 
+		+psb
+		+ttu
+		width: 174px
+		display: inline-block
+		+rm(1300)
+			border: 6px solid white
+			border-radius: 6px
+			font-size: 1.7vw
+			padding: 1.1vw 1.35vw 1.1vw 1.4vw
+			width: 22.5vw
+		+r(768)
+			opacity: 1
+			+placeholder
+				opacity: 0.4
+		+r(640)
+			width: 100%
+			+box
+			border: 1vw solid white
+			padding: 2.8vw 4.7vw 2.5vw 4.7vw
+			font-size: 4vw 
+			margin-bottom: 6.2vw
+			border-radius: 1vw
+	.input
+		opacity: 0.4
+		+transition(opacity 0.4s ease)
+		&:focus
+			opacity: 1
+			+placeholder
+				opacity: 0.2
+	.submit
+		background: #3aaf63
+		border-color: #3aaf63
+		width: 200px
+		+transition(background 0.2s ease, border-color 0.2s ease)
+		+box
+		&:hover
+			background: #4f79c5
+			border-color: #4f79c5
+		&:active
+			background: white
+			border-color: white
+			color: black
+		+rm(1300)
+			width: 26vw
+		+r(768)
+			&:hover
+				background-color: #3aaf63
+				border-color: #3aaf63
+		+r(640)
+			width: 100%
+			border-radius: 1vw
+		
 
 
 

@@ -24,3 +24,111 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; }
 .l:after { content: " "; display: table; clear: both; }
 .l .l-col1 { float: left; width: 20%; }
 .l .l-col2 { float: right; width: 70%; }
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; vertical-align: baseline; }
+
+body, html { height: 100%; }
+
+img, fieldset, a img { border: none; }
+
+input[type="submit"], button { cursor: pointer; }
+input[type="submit"]::-moz-focus-inner, button::-moz-focus-inner { padding: 0; border: 0; }
+
+textarea { overflow: auto; }
+
+input, button { margin: 0; padding: 0; border: 0; }
+
+div, input, textarea, select, button, h1, h2, h3, h4, h5, h6, a, span, a:focus { outline: none; }
+
+ul, ol { list-style-type: none; }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) { * { -webkit-text-size-adjust: none; } }
+table { border-spacing: 0; border-collapse: collapse; width: 100%; }
+
+body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; }
+
+.logo { opacity: 0; -webkit-transition: opacity 0.5s ease, top 0.5s ease; -webkit-transition-delay: 0.3s, 0.3s; -moz-transition: opacity 0.5s ease 0.3s, top 0.5s ease 0.3s; -o-transition: opacity 0.5s ease 0.3s, top 0.5s ease 0.3s; transition: opacity 0.5s ease 0.3s, top 0.5s ease 0.3s; position: relative; top: 15px; }
+.a .logo { opacity: 1; top: 0; }
+
+h1 { opacity: 0; -webkit-transition: opacity 0.5s ease; -webkit-transition-delay: 0.6s; -moz-transition: opacity 0.5s ease 0.6s; -o-transition: opacity 0.5s ease 0.6s; transition: opacity 0.5s ease 0.6s; }
+.a h1 { opacity: 1; }
+
+p { opacity: 0; -webkit-transition: opacity 0.5s ease; -webkit-transition-delay: 0.9s; -moz-transition: opacity 0.5s ease 0.9s; -o-transition: opacity 0.5s ease 0.9s; transition: opacity 0.5s ease 0.9s; }
+.a p { opacity: 0.5; }
+
+.first { opacity: 0; position: relative; top: 15px; -webkit-transition: opacity 0.5s ease, top 0.5s ease; -webkit-transition-delay: 1.2s, 1.2s; -moz-transition: opacity 0.5s ease 1.2s, top 0.5s ease 1.2s; -o-transition: opacity 0.5s ease 1.2s, top 0.5s ease 1.2s; transition: opacity 0.5s ease 1.2s, top 0.5s ease 1.2s; }
+.a .first { opacity: 1; top: 0; }
+.a .first:focus { opacity: 1; }
+.a .first:focus:-ms-input-placeholder { opacity: 0.2; }
+.a .first:focus:-moz-placeholder { opacity: 0.2; }
+.a .first:focus::-moz-placeholder { opacity: 0.2; }
+.a .first:focus::-webkit-input-placeholder { opacity: 0.2; }
+.a .first:focus::placeholder { opacity: 0.2; }
+
+.second { opacity: 0; position: relative; top: 15px; -webkit-transition: opacity 0.5s ease, top 0.5s ease; -webkit-transition-delay: 1.5s, 1.5s; -moz-transition: opacity 0.5s ease 1.5s, top 0.5s ease 1.5s; -o-transition: opacity 0.5s ease 1.5s, top 0.5s ease 1.5s; transition: opacity 0.5s ease 1.5s, top 0.5s ease 1.5s; }
+.a .second { opacity: 1; top: 0; }
+
+.third { opacity: 0; position: relative; top: 15px; -webkit-transition: opacity 0.5s ease, top 0.5s ease; -webkit-transition-delay: 1.8s, 1.8s; -moz-transition: opacity 0.5s ease 1.8s, top 0.5s ease 1.8s; -o-transition: opacity 0.5s ease 1.8s, top 0.5s ease 1.8s; transition: opacity 0.5s ease 1.8s, top 0.5s ease 1.8s; }
+.a .third { opacity: 1; top: 0; }
+
+body, html { width: 100%; height: 100%; overflow: hidden; }
+@media only screen and (max-width: 768px) { body, html { height: 100%; overflow: visible; } }
+
+html { font-size: 62.5%; }
+
+@font-face { font-family: "PTSans Bold"; src: url("fonts/pts75f-webfont.eot"); src: url("fonts/pts75f-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/pts75f-webfont.woff") format("woff"), url("fonts/pts75f-webfont.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+
+@font-face { font-family: "OpenSans Light"; src: url("fonts/opensans-light-webfont.eot"); src: url("fonts/opensans-light-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/opensans-light-webfont.woff") format("woff"), url("fonts/opensans-light-webfont.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+
+.out { width: 100%; min-height: 100%; background: url(../img/bg-img.jpg) no-repeat center center; background-size: cover; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; min-width: 320px; }
+@media only screen and (min-width: 1300px) { .out { height: 100%; } }
+@media only screen and (max-width: 640px) { .out { height: auto; } }
+
+.wrapper { width: 100%; height: 100vh; background: url(../img/filter.png) center center no-repeat; background-size: cover; text-align: center; text-align: center; font-size: 0; }
+.wrapper:before { content: ""; display: inline-block; vertical-align: middle; width: 0; height: 100%; }
+@media only screen and (max-width: 640px) { .wrapper { height: auto; width: 81%; padding: 0px 9.5% 20px 9.5%; } }
+
+.logo { width: 131px; }
+@media only screen and (min-width: 1300px) { .logo { width: 17vw; } }
+@media only screen and (max-width: 640px) { .logo { width: 51%; max-width: 262px; } }
+
+.inner { width: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; display: inline-block; vertical-align: middle; }
+@media only screen and (max-width: 640px) { .inner { width: 100%; max-width: 100%; padding-top: 20%; } }
+.inner h1 { font-family: "PTSans Bold", Tahoma, sans-serif; text-transform: uppercase; font-size: 24px; font-size: 2.4rem; color: white; letter-spacing: 1.5px; margin-top: 7.5%; }
+@media only screen and (min-width: 1300px) { .inner h1 { font-size: 3.1vw; line-height: 5.23vw; letter-spacing: 0.37vw; margin-top: 8vh; }
+  .inner h1 span { display: block; margin: 0 auto; width: 100%; } }
+@media only screen and (max-width: 768px) { .inner h1 { display: block; margin: 9% auto 0px; max-width: 500px; text-align: center; line-height: 40px; }
+  .inner h1 span { display: block; width: 100%; } }
+@media only screen and (max-width: 640px) { .inner h1 { font-size: 6vw; line-height: 9.4vw; max-width: 95%; letter-spacing: 0.7vw; margin-top: 15%; } }
+.inner p { font-family: "OpenSans Light", Tahoma, sans-serif; color: white; font-size: 14px; font-size: 1.4rem; display: block; width: 60%; margin: 3.2% auto 8.4%; letter-spacing: 0; }
+@media only screen and (min-width: 1300px) { .inner p { font-size: 1.8vw; line-height: 3.1vw; margin: 3vh auto 9vh; width: 85%; } }
+@media only screen and (max-width: 768px) { .inner p { width: 96%; line-height: 24px; max-width: 640px; margin: 3.5% auto 12%; } }
+@media only screen and (max-width: 640px) { .inner p { font-size: 4vw; line-height: 6.55vw; margin: 9% auto 13%; } }
+.inner form { width: 100%; text-align: justify; font-size: 0.1px; font-size: 0.01rem; max-width: 640px; margin: 0 auto; padding: 0 2px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; height: 40px; }
+@media only screen and (min-width: 1300px) { .inner form { max-width: 84%; } }
+.inner form:after { content: ""; width: 100%; display: inline-block; }
+@media only screen and (max-width: 640px) { .inner form { width: 100%; padding: 0px; height: auto; } }
+.inner div { display: inline-block; }
+@media only screen and (max-width: 640px) { .inner div { width: 100%; } }
+.inner input { background: none; color: white; border: 3px solid white; border-radius: 3px; padding: 8px 10px 7px 10px; font-size: 13px; font-size: 1.3rem; font-family: "PTSans Bold", Tahoma, sans-serif; text-transform: uppercase; width: 174px; display: inline-block; }
+@media only screen and (min-width: 1300px) { .inner input { border: 6px solid white; border-radius: 6px; font-size: 1.7vw; padding: 1.1vw 1.35vw 1.1vw 1.4vw; width: 22.5vw; } }
+@media only screen and (max-width: 768px) { .inner input { opacity: 1; }
+  .inner input:-ms-input-placeholder { opacity: 0.4; }
+  .inner input:-moz-placeholder { opacity: 0.4; }
+  .inner input::-moz-placeholder { opacity: 0.4; }
+  .inner input::-webkit-input-placeholder { opacity: 0.4; }
+  .inner input::placeholder { opacity: 0.4; } }
+@media only screen and (max-width: 640px) { .inner input { width: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; border: 1vw solid white; padding: 2.8vw 4.7vw 2.5vw 4.7vw; font-size: 4vw; margin-bottom: 6.2vw; border-radius: 1vw; } }
+.inner .input { opacity: 0.4; -webkit-transition: opacity 0.4s ease; -moz-transition: opacity 0.4s ease; -o-transition: opacity 0.4s ease; transition: opacity 0.4s ease; }
+.inner .input:focus { opacity: 1; }
+.inner .input:focus:-ms-input-placeholder { opacity: 0.2; }
+.inner .input:focus:-moz-placeholder { opacity: 0.2; }
+.inner .input:focus::-moz-placeholder { opacity: 0.2; }
+.inner .input:focus::-webkit-input-placeholder { opacity: 0.2; }
+.inner .input:focus::placeholder { opacity: 0.2; }
+.inner .submit { background: #3aaf63; border-color: #3aaf63; width: 200px; -webkit-transition: background 0.2s ease, border-color 0.2s ease; -moz-transition: background 0.2s ease, border-color 0.2s ease; -o-transition: background 0.2s ease, border-color 0.2s ease; transition: background 0.2s ease, border-color 0.2s ease; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.inner .submit:hover { background: #4f79c5; border-color: #4f79c5; }
+.inner .submit:active { background: white; border-color: white; color: black; }
+@media only screen and (min-width: 1300px) { .inner .submit { width: 26vw; } }
+@media only screen and (max-width: 768px) { .inner .submit:hover { background-color: #3aaf63; border-color: #3aaf63; } }
+@media only screen and (max-width: 640px) { .inner .submit { width: 100%; border-radius: 1vw; } }
