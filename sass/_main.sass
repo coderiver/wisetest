@@ -39,8 +39,8 @@ html
 	background-size: cover
 	+box
 	min-width: 320px
-	+rm(1300)
-		height: 100%
+	// +rm(1300)
+	// 	height: 100%
 	+r(640)
 		height: auto
 .wrapper
@@ -57,7 +57,7 @@ html
 .logo
 	width: 131px
 	+rm(1300)
-		width: 17vw
+		// width: 17vw
 	+r(640)
 		width: 51%
 		max-width: 262px
@@ -70,6 +70,7 @@ html
 		width: 100%
 		max-width: 100%
 		padding-top: 20%
+		padding-top: 30px 
 	h1
 		+psb
 		+ttu
@@ -78,14 +79,14 @@ html
 		letter-spacing: 1.5px
 		margin-top: 7.5%
 		+rm(1300)
-			font-size: 3.1vw 
-			line-height: 5.23vw
-			letter-spacing: 0.37vw
-			margin-top: 8vh
-			span
-				display: block
-				margin: 0 auto
-				width: 100%
+			// font-size: 3.1vw 
+			// line-height: 5.23vw
+			// letter-spacing: 0.37vw
+			// margin-top: 8vh
+			// span
+			// 	display: block
+			// 	margin: 0 auto
+			// 	width: 100%
 		+r(768)
 			display: block
 			margin: 9% auto 0px
@@ -96,7 +97,7 @@ html
 				display: block
 				width: 100%
 		+r(640)
-			font-size: 6vw 
+			font-size: 5vw 
 			line-height: 9.4vw
 			max-width: 95%
 			letter-spacing: 0.7vw
@@ -110,10 +111,10 @@ html
 		margin: 3.2% auto 8.4%
 		letter-spacing: 0
 		+rm(1300)
-			font-size: 1.8vw
-			line-height: 3.1vw
-			margin: 3vh auto 9vh
-			width: 85%
+			// font-size: 1.8vw
+			// line-height: 3.1vw
+			// margin: 3vh auto 9vh
+			// width: 85%
 		+r(768)
 			width: 96%
 			line-height: 24px
@@ -133,7 +134,7 @@ html
 		+box
 		height: 40px
 		+rm(1300)
-			max-width: 84%
+			// max-width: 84%
 		&:after
 			content: ""
 			width: 100%
@@ -157,12 +158,12 @@ html
 		+ttu
 		width: 174px
 		display: inline-block
-		+rm(1300)
-			border: 6px solid white
-			border-radius: 6px
-			font-size: 1.7vw
-			padding: 1.1vw 1.35vw 1.1vw 1.4vw
-			width: 22.5vw
+		// +rm(1300)
+		// 	border: 6px solid white
+		// 	border-radius: 6px
+		// 	font-size: 1.7vw
+		// 	padding: 1.1vw 1.35vw 1.1vw 1.4vw
+		// 	width: 22.5vw
 		+r(768)
 			opacity: 1
 			+placeholder
@@ -178,6 +179,7 @@ html
 	.input
 		opacity: 0.4
 		+transition(opacity 0.4s ease)
+		-webkit-appearance: none
 		&:focus
 			opacity: 1
 			+placeholder
@@ -186,6 +188,7 @@ html
 		background: #3aaf63
 		border-color: #3aaf63
 		width: 200px
+		-webkit-appearance: none
 		+transition(background 0.2s ease, border-color 0.2s ease)
 		+box
 		&:hover
@@ -195,8 +198,8 @@ html
 			background: white
 			border-color: white
 			color: black
-		+rm(1300)
-			width: 26vw
+		// +rm(1300)
+		// 	width: 26vw
 		+r(768)
 			&:hover
 				background-color: #3aaf63
