@@ -12,7 +12,6 @@ body, html
 	height: 100%
 	overflow: hidden
 	+r(768)
-		height: 100%
 		overflow: visible
 html
 	font-size: 62.5%
@@ -74,11 +73,12 @@ html
 	h1
 		+psb
 		+ttu
-		+fs(24)
+		font-size: 24px 
 		color: white
 		letter-spacing: 1.5px
 		margin-top: 7.5%
 		+rm(1300)
+			font-size: 1.9vw 
 			// font-size: 3.1vw 
 			// line-height: 5.23vw
 			// letter-spacing: 0.37vw
@@ -104,13 +104,15 @@ html
 			margin-top: 15%
 	p
 		+osl
-		color: white
-		+fs(14)
+		color: #fff
+		font-size: 14px 
 		display: block
 		width: 60%
 		margin: 3.2% auto 8.4%
 		letter-spacing: 0
+		line-height: 1.4 
 		+rm(1300)
+			font-size:  1.1vw
 			// font-size: 1.8vw
 			// line-height: 3.1vw
 			// margin: 3vh auto 9vh
@@ -126,15 +128,18 @@ html
 			margin: 9% auto 13%
 	form
 		width: 100%
-		text-align: justify
+		text-align: center
 		+fs(0.1)
-		max-width: 640px
+		// max-width: 640px
 		margin: 0 auto
-		padding: 0 2px
 		+box
 		height: 40px
 		+rm(1300)
 			// max-width: 84%
+			// width: 53vw  
+			width: auto
+			
+			max-width: none 
 		&:after
 			content: ""
 			width: 100%
@@ -153,12 +158,18 @@ html
 		border: 3px solid white
 		border-radius: 3px
 		padding: 8px 10px 7px 10px
-		+fs(13) 
+		font-size: 13px 
 		+psb
 		+ttu
 		width: 174px
 		display: inline-block
-		// +rm(1300)
+		margin:  0 10px 
+		+rm(1300)
+			font-size: 1.1vw
+			border-radius: 4px  
+			padding: .6vw .8vw .5vw .8vw
+			width: 14.5vw 
+			margin: 0 1vw 
 		// 	border: 6px solid white
 		// 	border-radius: 6px
 		// 	font-size: 1.7vw
@@ -174,6 +185,7 @@ html
 			border: 1vw solid white
 			padding: 2.8vw 4.7vw 2.5vw 4.7vw
 			font-size: 4vw 
+			margin: 0 
 			margin-bottom: 6.2vw
 			border-radius: 1vw
 	.input
