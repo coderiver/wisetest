@@ -172,7 +172,7 @@ html
 	input
 		background: none
 		color: white
-		border: 3px solid white
+		border: 3px solid rgba(#fff, .4)
 		border-radius: 3px
 		padding: 8px 10px 7px 10px
 		font-size: 13px 
@@ -195,7 +195,7 @@ html
 		+r(768)
 			opacity: 1
 			+placeholder
-				opacity: 0.4
+				color: #999794 
 		+r(640)
 			width: 100%
 			+box
@@ -206,11 +206,12 @@ html
 			margin-bottom: 6vw
 			border-radius: 1vw
 	.input
-		opacity: 0.4
+
 		+transition(opacity 0.05s ease)
 		-webkit-appearance: none
 		&:focus
 			opacity: 1
+			border-color: #fff 
 			+placeholder
 				opacity: 0.2
 		&.is-error
