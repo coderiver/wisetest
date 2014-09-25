@@ -77,20 +77,14 @@ html { font-size: 62.5%; }
 @media only screen and (max-width: 640px) { .inner div { width: 100%; } }
 .inner input { background: none; color: white; border: 3px solid rgba(255, 255, 255, 0.4); border-radius: 3px; padding: 8px 10px 7px 10px; font-size: 13px; font-family: "PTSans Bold", Tahoma, sans-serif; text-transform: uppercase; width: 174px; display: inline-block; margin: 0 10px; }
 @media only screen and (min-width: 1300px) { .inner input { font-size: 1.1vw; border-radius: 4px; padding: 0.6vw 0.8vw 0.5vw 0.8vw; width: 14.5vw; margin: 0 1vw; } }
-@media only screen and (max-width: 768px) { .inner input { opacity: 1; }
-  .inner input:-ms-input-placeholder { color: white; opacity: 0.4; }
-  .inner input:-moz-placeholder { color: white; opacity: 0.4; }
-  .inner input::-moz-placeholder { color: white; opacity: 0.4; }
-  .inner input::-webkit-input-placeholder { color: white; opacity: 0.4; }
-  .inner input::placeholder { color: white; opacity: 0.4; } }
-@media only screen and (max-width: 640px) { .inner input { width: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; border: 1vw solid white; padding: 2.4vw 4.7vw 2.3vw 4.7vw; font-size: 3.5vw; margin: 0; margin-bottom: 6vw; border-radius: 1vw; } }
+@media only screen and (max-width: 640px) { .inner input { width: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding: 2.4vw 4.7vw 2.3vw 4.7vw; font-size: 3.5vw; margin: 0; margin-bottom: 6vw; border-radius: 1vw; } }
 .inner .input { -webkit-transition: opacity 0.05s ease; -moz-transition: opacity 0.05s ease; -o-transition: opacity 0.05s ease; transition: opacity 0.05s ease; -webkit-appearance: none; }
 .inner .input:focus { opacity: 1; border-color: white; }
-.inner .input:focus:-ms-input-placeholder { opacity: 0.2; }
-.inner .input:focus:-moz-placeholder { opacity: 0.2; }
-.inner .input:focus::-moz-placeholder { opacity: 0.2; }
-.inner .input:focus::-webkit-input-placeholder { opacity: 0.2; }
-.inner .input:focus::placeholder { opacity: 0.2; }
+.inner .input:focus:-ms-input-placeholder { opacity: 0.5; }
+.inner .input:focus:-moz-placeholder { opacity: 0.5; }
+.inner .input:focus::-moz-placeholder { opacity: 0.5; }
+.inner .input:focus::-webkit-input-placeholder { opacity: 0.5; }
+.inner .input:focus::placeholder { opacity: 0.5; }
 .inner .input.is-error { border-color: red; opacity: 1; }
 .inner .submit { background: #3aaf63; border-color: #3aaf63; width: 200px; -webkit-appearance: none; -webkit-transition: background 0.05s ease, border-color 0.05s ease; -moz-transition: background 0.05s ease, border-color 0.05s ease; -o-transition: background 0.05s ease, border-color 0.05s ease; transition: background 0.05s ease, border-color 0.05s ease; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 .inner .submit:hover { background: #4f79c5; border-color: #4f79c5; }
