@@ -3,10 +3,26 @@
 <head>
 	<meta charset="utf-8">
 	<title>Мудрый Тест • Тестируем интернет-магазины, стартапы, сайты, мобильные приложения и десктопные программы</title>
+	<link rel="icon" href="/favicon.png" type="image/png" />
 	<meta name="viewport" content="width=device-width">
 	<link rel="stylesheet" media="screen" href="css/screen.css" >
 	<script type="text/javascript" src="js/lib/jquery.js"></script>
 	<script type="text/javascript" src="js/common.js"></script>
+
+	<!-- Twitter Card data -->
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="МЫ ТЕСТИРУЕМ ЦИФРОВЫЕ ПРОДУКТЫ И СТАРТАПЫ">
+	<meta name="twitter:description" content="Помогаем клиентам создавать сайты, мобильные приложения, десктопные программы и другие проекты более эффективными и прибыльными">
+	<meta name="twitter:creator" content="@birzool">
+	<meta name="twitter:image" content="http://wisetest.ru/img/wtlogo.jpg">
+
+
+	<meta property="og:title" content="Wisetest" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://wisetest.ru/" />
+<meta property="og:image" content="http://wisetest.ru/img/wtlogo.jpg" />
+<meta property="og:description" content="Помогаем клиентам создавать сайты, мобильные приложения, десктопные программы и другие проекты более эффективными и прибыльными" />
+<meta property="og:site_name" content="МЫ ТЕСТИРУЕМ ЦИФРОВЫЕ ПРОДУКТЫ И СТАРТАПЫ" />
 </head>
 <body>
 
@@ -25,12 +41,18 @@
 		<div class="inner">
 			<div class="logo"></div>
 			<h1><span>Мы тестируем</span> цифровые продукты и стартапы</h1>
-			<p>Помогаем клиентам создавать сайты, мобильные приложения, десктопные программы и другие проекты
-более эффективными и прибыльными</p>
+			<p>Помогаем клиентам создавать сайты, мобильные приложения, десктопные программы и&nbsp;другие проекты<br />
+более эффективными и&nbsp;прибыльными</p>
 			<form action="send.php" method="get">
-				<div class="first"><input type="text" name="name" id="name" class="input" placeholder="Ваше имя"></div>
-				<div class="second"><input type="text" name="email" id="email" class="input" placeholder="Контактный e-mail"></div>
-				<div class="third"><input type="submit" class="submit" value="Связаться с нами"></div>
+				<div class="form__contents">
+					<div class="first"><input type="text" name="name" id="name" class="input" placeholder="Ваше имя"></div>
+					<div class="second"><input type="email" name="email" id="email" class="input" placeholder="Контактный e-mail"></div>
+					<div class="third"><input type="submit" class="submit" value="Связаться с нами"></div>
+				</div>
+				<div class="success">
+					<div class="success__icon"></div>
+					<div class="success__message">СПАСИБО ЗА ВЕСТОЧКУ!  МЫ скоро свяжемся с вами для выяснения деталей :)</div>
+				</div>
 			</form>
 		</div>
 	</div>
