@@ -1,10 +1,13 @@
 //adds
 $speed: .4s
-.video
+.video,.bg
 	opacity: 0
 	.a &
 		opacity: 1
 		+transition(opacity $speed ease 0.3s)
+.bg
+	.a &
+		+transition(opacity $speed ease 0.4s)
 .logo
 	opacity: 0
 	+transition(opacity $speed ease 0.3s, top $speed ease 0.3s)
