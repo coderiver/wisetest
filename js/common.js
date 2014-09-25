@@ -1,7 +1,11 @@
 $(document).ready(function() {
-
+	
 	$('body').addClass('a');
 
+	$('.wrapper').height($(window).height());
+	$(window).resize(function(event) {
+		$('.wrapper').height($(window).height());
+	});
 	// function supports_video() {
  //  		return !!document.createElement('video').canPlayType;
 	// }

@@ -2,7 +2,9 @@
 =r($width)
 	@media only screen and (max-width: $width+'px')
 		@content
-
+=rh($width)
+	@media only screen and (max-height: $width+'px')
+		@content
 =rm($width)
 	@media only screen and (min-width: $width+'px')
 		@content
@@ -27,6 +29,8 @@ body, html
 	position: relative
 	background: #000 
 	+r(768)
+		overflow: visible
+	+rh(650)
 		overflow: visible
 html
 	font-size: 62.5%
@@ -63,6 +67,7 @@ html
 	// background: url(../img/filter.png) center center no-repeat
 	// background-size: cover
 	text-align: center
+	// border: 1px solid green
 	+vertical
 	+r(640)
 		height: auto
@@ -93,6 +98,7 @@ html
 	+box
 	display: inline-block
 	vertical-align: middle
+	// border: 1px solid red
 	+r(640)
 		width: 100%
 		max-width: 100%
@@ -205,7 +211,7 @@ html
 			margin: 0 
 			margin-bottom: 6vw
 			border-radius: 1vw
-			font-size: 11px 
+			// font-size: 11px 
 	.input
 		+transition(opacity 0.05s ease)
 		-webkit-appearance: none
@@ -268,6 +274,10 @@ video
 	width: auto
 	height: auto
 	+r(640)
+		display: none
+	+ipad
+		display: none
+	+ipad-retina
 		display: none
 .out
 	position: relative
