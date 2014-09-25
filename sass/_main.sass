@@ -22,8 +22,9 @@
 		+transform(translateX(5px))
 body, html
 	width: 100%
-	height: 100%
+	min-height: 100%
 	overflow: hidden
+	position: relative
 	+r(768)
 		overflow: visible
 html
@@ -47,8 +48,8 @@ html
 .out
 	width: 100%
 	min-height: 100%
-	background: url(../img/bg-img.jpg) no-repeat center center
-	background-size: cover
+	// background: url(../img/bg-img.jpg) no-repeat center center
+	// background-size: cover
 	+box
 	min-width: 320px
 	// +rm(1300)
@@ -58,8 +59,8 @@ html
 .wrapper
 	width: 100%
 	height: 100vh
-	background: url(../img/filter.png) center center no-repeat
-	background-size: cover
+	// background: url(../img/filter.png) center center no-repeat
+	// background-size: cover
 	text-align: center
 	+vertical
 	+r(640)
@@ -68,10 +69,21 @@ html
 		padding: 0px 9.5% 20px 9.5%
 .logo
 	width: 131px
+	height: 93px 
+	background:  url(../img/logo.svg) no-repeat 50% 0
+	-webkit-background-size: contain
+	-o-background-size: contain
+	background-size: contain
+	display: inline-block
 	+rm(1300)
 		// width: 17vw
+		width: 12vw
+		height: 8vw
+   
 	+r(640)
 		width: 51%
+		height: 0
+		padding-bottom: 46%  
 		max-width: 262px
 .inner
 	width: 100%
@@ -92,14 +104,6 @@ html
 		margin-top: 7.5%
 		+rm(1300)
 			font-size: 1.9vw 
-			// font-size: 3.1vw 
-			// line-height: 5.23vw
-			// letter-spacing: 0.37vw
-			// margin-top: 8vh
-			// span
-			// 	display: block
-			// 	margin: 0 auto
-			// 	width: 100%
 		+r(768)
 			display: block
 			margin: 9% auto 0px
@@ -209,6 +213,8 @@ html
 			opacity: 1
 			+placeholder
 				opacity: 0.2
+		&.is-error
+			border-color: red 
 	.submit
 		background: #3aaf63
 		border-color: #3aaf63
@@ -233,6 +239,38 @@ html
 			width: 100%
 			border-radius: 1vw
 		
+.video,.overlay,.bg
+	position: absolute
+	top: 0
+	left: 0
+	width: 100%
+	bottom: 0
+	right: 0
+	z-index: 1 
+.bg
+	background: url(../img/photo.jpg) no-repeat center center
+	-webkit-background-size: cover 
+	-o-background-size: cover 
+	background-size: cover 
+.overlay
+	background: url(../img/filter.png) center center no-repeat
+	-webkit-background-size: cover
+	-o-background-size: cover
+	background-size: cover
+video
+	position: absolute
+	right: 0
+	bottom: 0
+	min-width: 100%
+	min-height: 100%
+	width: auto
+	height: auto
+.out
+	position: relative
+	z-index: 10 
+     
+
+
 
 
 
